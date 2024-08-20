@@ -6,6 +6,7 @@ import { BiMenuAltRight } from 'react-icons/bi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { AnimatePresence, motion } from 'framer-motion'
 import { sideVariants, itemVariants } from '../utils/motion'
+import { Link } from 'react-router-dom'
 
 
 
@@ -19,18 +20,18 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className='z-10 hidden md:flex lg:flex justify-around fixed w-full'> 
+      <nav className='z-10 hidden bg-[#181818] md:flex lg:flex justify-around fixed w-full text-[#fff]'> 
         <img src={logo} alt="website logo" className='w-[12%] h-12 cursor-pointer mt-1' />
 
         <div className='flex items-center justify-between lg:w-[30%] md:w-[40%]'>
             {navlinks.map((link) => (
                 <div className="" key={link.name}>
-                    <a href="#" className='list-none'>{link.title}</a>
+                    <Link to={link.url}  className='list-none'>{link.title}</Link>
                 </div>
             ))}
 
         </div>
-        <button className='w-[139px] h-[50px] rounded-[3px] border-[1px] mt-2'>Login</button>
+        <button className='w-[139px] h-[50px] rounded-[3px] border-[1px] mt-2 '>Login</button>
       </nav>
 
 
