@@ -7,7 +7,7 @@ import { ImFacebook2 } from 'react-icons/im'
 const Footer = () => {
   return (
     <>
-      <div className="footer font-sans flex-wrap px-5 flex flex-col md:flex-row justify-around  mt-[300px] pb-[70px]  items-center">
+    <div className="footer bg-[#181818] text-[#fff] mt-[-10px] font-sans flex-wrap px-5 flex flex-col md:flex-row justify-around  mt-[300px] pb-[70px]  items-center">
       <div className="foot-links flex flex-col md:flex-row text-[20px] md:text-4xl w-[40%] lg:gap-12 justify-around md:w-auto mb-10 items-center  md:mb-0">
         {footer.map((foot) => (
           <div className="mb-6 md:mb-0 md:mr-10" key={foot.name}>
